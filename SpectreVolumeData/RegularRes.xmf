@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd">
+<Xdmf Version="2.0">
+<Domain>
+<Grid Name="Evolution" GridType="Collection" CollectionType="Temporal">
+  <Grid Name="Grids" GridType="Collection">
+    <Time Value="0.00000000000000e+00"/>
+    <Grid Name="PlaneWaveMinkowski3DVolume0.h5" GridType="Uniform">
+      <Topology TopologyType="Hexahedron" NumberOfElements="343">
+        <DataItem Dimensions="343 8" NumberType="Int" Format="HDF5">
+          PlaneWaveMinkowski3DVolume0.h5:/VolumePsi.vol/ObservationId8897018137866553916/connectivity
+        </DataItem>
+      </Topology>
+      <Geometry Type="X_Y_Z">
+        <DataItem Dimensions=" 512" NumberType="Double" Precision="8" Format="HDF5">
+          PlaneWaveMinkowski3DVolume0.h5:/VolumePsi.vol/ObservationId8897018137866553916/InertialCoordinates_x
+        </DataItem>
+        <DataItem Dimensions=" 512" NumberType="Double" Precision="8" Format="HDF5">
+          PlaneWaveMinkowski3DVolume0.h5:/VolumePsi.vol/ObservationId8897018137866553916/InertialCoordinates_y
+        </DataItem>
+        <DataItem Dimensions=" 512" NumberType="Double" Precision="8" Format="HDF5">
+          PlaneWaveMinkowski3DVolume0.h5:/VolumePsi.vol/ObservationId8897018137866553916/InertialCoordinates_z
+        </DataItem>
+      </Geometry>
+      <Attribute Name="Psi" AttributeType="Scalar" Center="Node">
+        <DataItem Dimensions=" 512" NumberType="Double" Precision="8" Format="HDF5">
+          PlaneWaveMinkowski3DVolume0.h5:/VolumePsi.vol/ObservationId8897018137866553916/Psi
+        </DataItem>
+      </Attribute>
+    </Grid>
+  </Grid>
+</Grid>
+</Domain>
+</Xdmf>
